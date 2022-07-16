@@ -27,7 +27,7 @@
 #define ONE   1 
 #define TWO   2 
 #define THREE 3
-
+#define MSG_ERR "Entry Invalid !"
 
 
 using namespace std; 
@@ -39,12 +39,12 @@ int main() {
 	//program variables 
 	int choice; 
         bool quit;
-	
+	bool validation; 
 
 
 	//Initializing variables 
 	quit = false;
-
+	validation = true;
 
 
 	/***The program***/ 
@@ -57,8 +57,21 @@ int main() {
         while (!quit) {
 
 	//Menu of choice
-	cout<<NL<<MENU<<endl;
+	
+	while (validation) {
+        
+	//Enter your choise
+	cout<<NL<<MENU;
 	cin>>choice;
+
+	//Verify the menu options
+	if (choice >= ONE && choice <= THREE) 
+	       validation = false;
+	else 
+		cout<<NL<<MSG_ERR<<NL<<NL;
+		
+        
+	}
 	 
 		switch(choice){ 
 			case ONE:
