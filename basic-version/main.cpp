@@ -22,12 +22,14 @@
 	     "\n3.  Quit the program" 
 #define TAB "\t"
 #define NL "\n"
-
+#define ONE   1 
+#define TWO   2 
+#define THREE 3
 
 
 
 using namespace std; 
-enum OPTIONS { ONE = 1, TWO = 2, THREE = 3};
+
 
 
 int main() {
@@ -35,10 +37,7 @@ int main() {
 	//program variables 
 	int choice; 
         bool quit;
-        OPTIONS opt1 = ONE; 
-	OPTIONS opt2 = TWO;
-	OPTIONS opt3 = THREE;
-
+	
 
 
 	//Initializing variables 
@@ -60,11 +59,11 @@ int main() {
 	cin>>choice;
 	 
 		switch(choice){ 
-			case opt3:
+			case ONE:
 			break;
-			case opt2:
+			case TWO:
 			break; 
-			case opt3:	
+			case THREE:	
 			quit = true; 
 			break;
 		}
