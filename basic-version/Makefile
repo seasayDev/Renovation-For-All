@@ -10,4 +10,7 @@ compile:
 execute: 
 	./$(file) 
 
+.PHONY: clean 
 
+clean: 
+	rm -rf $(file) *.swp;
