@@ -21,14 +21,23 @@
              "\n2.  Display the number of floors installed and the total amount of all installations"\
 	     "\n3.  Quit the program" 
 #define TAB "\t"
+#define NL "\n"
 
 using namespace std; 
+
+enum OPTIONS {ONE = 1 , TWO = 2, THREE = 3};
 
 int main() {
 
 	//program variables 
 	int choice; 
+        bool quit;
+        OPTIONS opt1 = ONE;
+        OPTIONS opt2 = TWO;
+	OPTIONS opt3 = THREE;
 
+	//Initializing variables 
+	quit = false;
 
 
 
@@ -36,7 +45,26 @@ int main() {
 
 	//Display the menu of the program 
 	
-	cout<<LINE<<endl<<WELCOME<<endl<<DESCRIPTION<<endl<<LINE<<endl;
+ 	cout<<LINE<<endl<<WELCOME<<endl<<DESCRIPTION<<endl<<LINE<<endl;
+        
+	
+        while (!quit) {
+
+	//Menu of choice
+	cout<<NL<<MENU<<endl;
+	cin>>choice;
+	 
+		switch(choice){ 
+			case 'opt1':
+			break;
+			case 'opt2':
+			break; 
+			case 'opt3'	
+			quit = true; 
+			break;
+		}
+	}	
 
 	return 0; 
-}
+        
+ }
