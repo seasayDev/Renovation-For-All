@@ -23,18 +23,23 @@
 #define TAB "\t"
 #define NL "\n"
 
-using namespace std; 
 
-enum OPTIONS {ONE = 1 , TWO = 2, THREE = 3};
+
+
+using namespace std; 
+enum OPTIONS { ONE = 1, TWO = 2, THREE = 3};
+
 
 int main() {
 
 	//program variables 
 	int choice; 
         bool quit;
-        OPTIONS opt1 = ONE;
-        OPTIONS opt2 = TWO;
+        OPTIONS opt1 = ONE; 
+	OPTIONS opt2 = TWO;
 	OPTIONS opt3 = THREE;
+
+
 
 	//Initializing variables 
 	quit = false;
@@ -55,11 +60,11 @@ int main() {
 	cin>>choice;
 	 
 		switch(choice){ 
-			case 'opt1':
+			case opt3:
 			break;
-			case 'opt2':
+			case opt2:
 			break; 
-			case 'opt3'	
+			case opt3:	
 			quit = true; 
 			break;
 		}
