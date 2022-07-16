@@ -25,7 +25,18 @@
 using namespace std; 
 
 int main() {
- cout<<MENU;  
+
+	//program variables 
+	int choice; 
+
+
+
+
+	/***The program***/ 
+
+	//Display the menu of the program 
+	
+	cout<<LINE<<endl<<WELCOME<<endl<<DESCRIPTION<<endl
 
 	return 0; 
 }
