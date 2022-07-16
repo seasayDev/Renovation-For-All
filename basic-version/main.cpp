@@ -20,7 +20,7 @@
              "\n1.  Invoice the installation of a floor"\
              "\n2.  Display the number of floors installed and the total amount of all installations"\
 	     "\n3.  Quit the program" 
-
+#define TAB "\t"
 
 using namespace std; 
 
@@ -36,7 +36,7 @@ int main() {
 
 	//Display the menu of the program 
 	
-	cout<<LINE<<endl<<WELCOME<<endl<<DESCRIPTION<<endl
+	cout<<LINE<<endl<<TAB<<WELCOME<<endl<<TAB<<DESCRIPTION<<endl<<LINE<<endl;
 
 	return 0; 
 }
