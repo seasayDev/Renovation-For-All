@@ -13,8 +13,8 @@
 
 
 #define LINE  "---------------------------------------------------------------------------------------" 
-#define WELCOME  "Welcome to the Renovation-For-All billing system."
-#define DESCRIPTION  "This program makes it possible to calculate the invoice\nfor the installation of a floor in the given"\
+#define WELCOME  " Welcome to the Renovation-For-All billing system."
+#define DESCRIPTION  " This program makes it possible to calculate the invoice\n for the installation of a floor in the given"\
 	             "surface according to the price per square foot and the type of floor"  
 #define MENU "*** Menu of choice ***"\
              "\n1.  Invoice the installation of a floor"\
@@ -36,7 +36,7 @@ int main() {
 
 	//Display the menu of the program 
 	
-	cout<<LINE<<endl<<TAB<<WELCOME<<endl<<TAB<<DESCRIPTION<<endl<<LINE<<endl;
+	cout<<LINE<<endl<<WELCOME<<endl<<DESCRIPTION<<endl<<LINE<<endl;
 
 	return 0; 
 }
