@@ -19,7 +19,9 @@
 #define MENU "*** Menu of choice ***"\
              "\n1.  Invoice the installation of a floor"\
              "\n2.  Display the number of floors installed and the total amount of all installations"\
-	     "\n3.  Quit the program" 
+	     "\n3.  Quit the program"\
+	     "\n\nEnter your choice : "  
+
 #define TAB "\t"
 #define NL "\n"
 #define ONE   1 
