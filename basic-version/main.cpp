@@ -25,8 +25,8 @@
 #define MSG_SOLL_L_NAME "Enter customer`s last name : "
 #define MSG_SOLL_PHONE "Enter customer`s phone number : "
 #define MSG_SOLL_ADDR "Enter customer`s address : "
-#define MSG_SOLL_FLOOR "Enter the floor type (1 for ceramic, \n2 for the vinyl tiles, "\
-                       "3 for linoleum, \n4 for hardwood, 5 for floating floor) : "
+#define MSG_SOLL_FLOOR "Enter the floor type (1 for ceramic, \n  2 for the vinyl tiles, "\
+                       "3 for linoleum, \n  4 for hardwood, 5 for floating floor) : "
 
 #define MSG_SOLL_SURFACE "Enter the area to be covered in square feet (greather than 0) : "
 #define MSG_SOLL_BUILD "Enter building type (R or r for residential, and E or e for company) : "
@@ -37,6 +37,7 @@
 #define ONE   1 
 #define TWO   2 
 #define THREE 3
+#define SIX   6
 #define MSG_ERR "Entry Invalid !"
 
 
@@ -109,10 +110,19 @@ int main() {
 			cout<<NL<<MSG_SOLL_ADDR;
 			cin>>address;
 
+            validation = false;
+			while(!validation) {
+
 			//Enter the floor type 
 			cout<<NL<<MSG_SOLL_FLOOR;
             cin>>floor;
+             if (floor > ONE && floor <SIX)
+			 	validation = true;
+			 else 
+			 	cout<<NL<<MSG_ERR<<NL<<NL;
 
+           }
+ 
 			//Enter the surface
 			cout<<NL<<MSG_SOLL_SURFACE;
 			cin>>surface;
