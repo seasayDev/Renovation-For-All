@@ -21,6 +21,16 @@
              "\n2.  Display the number of floors installed and the total amount of all installations"\
 	     "\n3.  Quit the program"\
 	     "\n\nEnter your choice : "  
+#define MSG_SOLL_F_NAME "Enter customer`s last name : "
+#define MSG_SOLL_L_NAME "Enter customer`s first name : "
+#define MSG_SOLL_PHONE "Enter customer`s phone number : "
+#define MSG_SOLL_ADDR "Enter customer`s address : "
+#define MSG_SOLL_FLOOR "Enter the floor type (1 for ceramic, 2 for the vinyl tiles, "\
+                       "3 for linoleum, 4 for hardwood, 5 for floating floor) : "
+
+#define MSG_SOLL_SURFACE "Enter the area to be covered in square feet (greather than 0) : "
+#define MSG_SOLL_BUILD "Enter building type (R or r for residential, and E or e for company) : "
+#define MSG_SOLL_PAY "Enter payment method (S for cash, D for debit, and C for credit) : "
 
 #define TAB "\t"
 #define NL "\n"
@@ -75,6 +85,7 @@ int main() {
 	 
 		switch(choice){ 
 			case ONE:
+
 			break;
 			case TWO:
 			break; 
