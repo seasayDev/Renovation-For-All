@@ -13,6 +13,7 @@
 
 
 #define LINE  "---------------------------------------------------------------------------------------" 
+#define SLINE "---------------------------------------------------------"
 #define WELCOME  " Welcome to the Renovation-For-All billing system."
 #define DESCRIPTION  " This program makes it possible to calculate the invoice for the installation of a floor\n in the given"\
 	             "surface according to the price per square foot and the type of floor."  
@@ -31,7 +32,21 @@
 #define MSG_SOLL_SURFACE "Enter the area to be covered in square feet (greather than 0) : "
 #define MSG_SOLL_BUILD "Enter building type (R or r for residential, and E or e for company) : "
 #define MSG_SOLL_PAY "Enter payment method (S for cash, D for debit, and C for credit) : "
-
+#define  RFA "Renovation-For-All"
+#define INVOICE_NBR "Invoice No: "
+#define DTHR "Date et Heure: "
+#define FLNAME "Last name and first name: "
+#define ADDRESS "Customer`s address: "
+#define SURFACE "Surface to be covered: "
+#define BUILDING "Type of building: "
+#define FLOOR "Type of floor: "
+#define PAYEMENT "Payment method: "
+#define PSQ  "Price by square feet"
+#define ST "Sub-total"
+#define TPS "TPS amount"
+#define TVQ "TVQ amount"
+#define TT "Total amount"
+#define THANKS "Thank you for your trust!"
 #define TAB "\t"
 #define NL "\n"
 #define ONE   1 
