@@ -49,6 +49,7 @@
 #define THANKS "Thank you for your trust!"
 #define TAB "\t"
 #define NL "\n"
+#define ZERO 0
 #define ONE   1 
 #define TWO   2 
 #define THREE 3
@@ -138,10 +139,19 @@ int main() {
 
            }
  
-			//Enter the surface
-			cout<<NL<<MSG_SOLL_SURFACE;
-			cin>>surface;
+            validation = false; 
+			while (!validation) {
+				//Enter the surface
+				cout<<NL<<MSG_SOLL_SURFACE;
+				cin>>surface;
+				if (surface > ZERO) 
+					validation = true;
+				else 
+					cout<<NL<<MSG_ERR<<NL<<NL;
+	
 
+			}
+			
 			//Enter the building 
 			cout<<NL<<MSG_SOLL_BUILD;
 			cin>>building;
