@@ -116,7 +116,7 @@ int main() {
 			//Enter the floor type 
 			cout<<NL<<MSG_SOLL_FLOOR;
             cin>>floor;
-             if (floor > ONE && floor <SIX)
+             if (floor >= ONE && floor <SIX)
 			 	validation = true;
 			 else 
 			 	cout<<NL<<MSG_ERR<<NL<<NL;
@@ -135,6 +135,9 @@ int main() {
 			cout<<NL<<MSG_SOLL_PAY;
 			cin>>payment; 
 			
+			
+
+
 			break;
 			case TWO:
 			break; 
